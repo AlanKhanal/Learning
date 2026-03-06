@@ -7,7 +7,12 @@ namespace Learning
         static void Main(string[] args)
         {
             //TestRefactor();
-           RunEnumTest();
+            //RunEnumTest();
+            //RunPropertiesTest();
+            //MultiDimenstionalArrayTest();
+            //RecursionTest();
+            //DictionaryTest();
+            new ParamsTest();
         }
 
         // Method to run the interactive enum program
@@ -28,6 +33,25 @@ namespace Learning
         static void TestRefactor()
         {
             new Refactoring();
+        }
+
+        static void RunPropertiesTest() 
+        {
+            //PropertiesTest.SetPlayerName("Alan"); //This throws error
+            PropertiesTest.SetPlayerName("Zlan");
+            Console.WriteLine(PropertiesTest.PlayerName);
+        }
+        static void MultiDimenstionalArrayTest()
+        {
+            new MultiDimenstionalArray();
+        }
+        static void RecursionTest()
+        {
+            new RecursionTest();
+        }
+        static void DictionaryTest()
+        {
+            new DictionaryTest();
         }
     }
 }
